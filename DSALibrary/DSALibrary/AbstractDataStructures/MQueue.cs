@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace DSALibrary.AbstractDataStructures;
 
 public class MQueue
