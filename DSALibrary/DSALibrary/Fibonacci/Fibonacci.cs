@@ -40,12 +40,12 @@ public class Fibonacci
         return sums[x];
     }
 
-    public int[] FibonacciSequence(int x)
+    public long[] FibonacciSequence(int x)
     {
-        if (x == 0) return new[] { 0 };
-        if (x == 1) return new[] { 0, 1 };
+        if (x == 0) return new long[] { 0 };
+        if (x == 1) return new long[] { 0, 1 };
         
-        var sums = new int[x + 1];
+        var sums = new long[x + 1];
         sums[0] = 0;
         sums[1] = 1;
 
