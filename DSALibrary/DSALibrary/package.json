@@ -1,0 +1,14 @@
+{
+  "name": "com.kobeja.DSALibrary",
+  "displayName": "DSA Library",
+  "description": "A collection of various data structures and algorithms written in c#",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "keywords": [
+    "data structures",
+    "algorithms",
+    "utilities",
+    "tools"
+  ]
+}
