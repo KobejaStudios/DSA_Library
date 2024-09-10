@@ -85,4 +85,49 @@ public class DepthFirstSearch
 
         return root;
     }
+
+    public void InOrderTraversal(TreeNode root)
+    {
+        if (root == null) return;
+        
+        // traverse left child
+        InOrderTraversal(root.Left);
+        
+        // do something with current node, in this case we're just printing it
+        Console.WriteLine(root.Value);
+        
+        // traverse right child
+        InOrderTraversal(root.Right);
+        
+        // because we're going left to right we traverse left recursive
+        // DO something with current
+        // then traverse left recursive
+    }
+
+    public void ReverseOrderTraversal(TreeNode root)
+    {
+        if (root == null) return;
+        
+        ReverseOrderTraversal(root.Right);
+        Console.WriteLine(root.Value);
+        ReverseOrderTraversal(root.Left);
+    }
+
+    public void PreOrderTraversal(TreeNode root)
+    {
+        if (root == null) return;
+        
+        Console.WriteLine(root.Value);
+        PreOrderTraversal(root.Left);
+        PreOrderTraversal(root.Right);
+    }
+
+    public void PostOrderTraversal(TreeNode root)
+    {
+        if (root == null) return;
+        
+        PostOrderTraversal(root.Left);
+        PostOrderTraversal(root.Right);
+        Console.WriteLine(root.Value);
+    }
 }
